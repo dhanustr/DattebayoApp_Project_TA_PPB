@@ -1,0 +1,127 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 175px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.figure {
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #333;
+}
+.favorite-btnsrc {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+  
+  .favoritedsrc {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  .favorite-iconsrc {
+    font-size: 24px;
+    color: #999;
+  }
+  
+  .favorite-icon.filledsrc {
+    color: #e63946;
+  }
+  
+  .favorite-button:hover .favorite-icon {
+    transform: scale(1.2);
+  }
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .search-input {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,19 @@
+.alphabet-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    max-width: 400px; 
+    margin: 10px auto; 
+}
+
+.alphabet-filter span {
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    color: #fa991b;
+}
+
+.alphabet-filter span:hover {
+    color: #9f1915;
+}

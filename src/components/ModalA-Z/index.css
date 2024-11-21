@@ -1,0 +1,104 @@
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh; 
+    overflow-y: auto; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.favorite-button-mdl {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+   
+}
+
+.favorite-button:hover .favorite-icon {
+    transform: scale(1.2);
+}
+
+.favorite-icon {
+    font-size: 24px;
+    color: #999;
+}
+
+.favorite-icon.filled {
+    color: #e63946;
+}
+
+.favorite-button:hover {
+    color: #e63946;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-details {
+    margin-top: 15px;
+}
+.Modal {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%; /* Responsive width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 10000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    max-height: 80vh; /* Limits the modal height */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.close-button:hover {
+    background: #d32f2f;
+}
+
+/* Optional media query for smaller screens */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 100%;
+        height: 80vh; /* Full height on small screens */
+    }
+}

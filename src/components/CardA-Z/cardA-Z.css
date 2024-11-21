@@ -1,0 +1,86 @@
+
+.cardAZ-container {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;  
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.cardAZ {
+    width: 180px; 
+    height: fit-content; 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.cardAZ:hover {
+    transform: scale(1.05);
+}
+
+
+.cardAZ-title {
+    font-size: 18px;
+    font-weight: bold;
+    word-break: break-word;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+
+.character-details {
+    padding: 9px 12px;
+}
+.favorite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .favorite-icon {
+    font-size: 24px;
+    color: #999;
+  }
+  
+  .favorite-icon.filled {
+    color: #e63946;
+  }
+  
+  .favorite-button:hover .favorite-icon {
+    transform: scale(1.2);
+  }
+
+
+@media (max-width: 768px) {
+    .cardAZ-container {
+        justify-content: space-evenly; 
+    }
+    .cardAZ {
+        width: calc(50% - 20px); 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cardAZ-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .cardAZ {
+        width: 80%; 
+    }
+}
